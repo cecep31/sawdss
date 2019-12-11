@@ -5,27 +5,27 @@ echo "
 echo "<table class='table1' border='1'>
   <tr>
 	<th>no</th>
-    <th>NIK</th>
     <th>nama</th>
+    <th>bobot</th>
 	<th>jenis</th>
 	
 	
  
   </tr>";
 
-$sqlm = mysqli_query($kon, "select * from tbl_karyawan");
+$sqlm = mysqli_query($kon, "select * from tbl_cat");
 $no = 1;
 while($rm = mysqli_fetch_array($sqlm)){
   echo "<tr>
     <td>$no</td>
     <td>
-	  <b>$rm[nik]</b>
+	  <b>$rm[nama]</b>
 	</td>
     <td>
-	 <b>$rm[nama]</b>
+	 <b>$rm[bobotc]</b>
 	</td>
     <td>
-	  benifit/cost : <b>$rm[jc]</b>
+	  <b>$rm[jenis]</b>
 	</td>
   </tr>";
   $no++;
@@ -55,43 +55,41 @@ echo "</div>";
 
 echo "
 <br>
-<h2>ALTERNATIF</h2>";
+<h2>karyawan</h2>";
 echo "<table class='table1' border='1'>
   <tr>
 	<th>no</th>
+    <th>nik</th>
     <th>nama</th>
-    <th>pengetahuan/wawasan</th>
-	  <th>instalsi jaringan</th>
-    <th>kepribadian</th>
-    <th>agama</th>
+	<th>golongan</th>
+    <th>alamat</th>
     <th>action</th>
+
 	
  
   </tr>";
 
-$sqlm = mysqli_query($kon, "select * from tbl_alt order by nama");
+$sqla = mysqli_query($kon, "select * from tbl_karyawan order by nama");
 $no = 1;
-while($rm = mysqli_fetch_array($sqlm)){
+while($ra = mysqli_fetch_array($sqla)){
   echo "<tr>
     <td>$no</td>
     <td>
-	  <b>$rm[nama]</b>
+	  <b>$ra[nik]</b>
 	</td>
     <td>
-	   <b>$rm[nilai_rapor]</b>
+	   <b>$ra[nama]</b>
 	</td>
     <td>
-	   <b>$rm[piagam]</b>
+	   <b>$ra[golongan]</b>
     </td>
     <td>
-	   <b>$rm[poin_pelanggaran]</b>
+        <b>$ra[alamat]</b>
     </td>
+   
     <td>
-	   <b>$rm[akhlak]</b>
-    </td>
-    <td>
-     <a href='?p=alternatifedit&ida=$rm[ida]'>Ubah</a> |
-     <a href='?p=alternatifdel&ida=$rm[ida]'>Hapus</a>
+     <a href='?p=altedit&ida=$rm[nik]'>Ubah</a> |
+     <a href='?p=altdel&ida=$rm[nik]'>Hapus</a>
 	</td>
     
     
