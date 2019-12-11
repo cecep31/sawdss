@@ -14,7 +14,7 @@
         <li><a href="#">Input</a>
             <ul>
                 <li><a href="?p=altadd">karyawan</a></li>
-                <li><a href="#">bobot</a></li>
+                <li><a href="?p=bobotadd">bobot</a></li>
             </ul>
         </li>
         <li><a href="#">penilaian</a>
@@ -36,9 +36,12 @@ if(isset($_GET['p'])){
         case 'altadd':
             include "altadd.php";
             break;
-        case 'alternatifedit':
-            include "alternatifedit.php";
+        case 'altedit':
+            include "altedit.php";
             break;
+        case 'bobotadd':
+            include "bobotadd.php";
+            break;    
         case 'alternatifdel':
             include "alternatifdel.php";
             break;	

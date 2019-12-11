@@ -1,7 +1,7 @@
 <?php
 echo "
 <br>
-<h2>KRITERIA</h2>";
+<h2 style='margin-left: 1cm;'>KRITERIA</h2>";
 echo "<table class='table1' border='1'>
   <tr>
 	<th>no</th>
@@ -55,7 +55,7 @@ echo "</div>";
 
 echo "
 <br>
-<h2>karyawan</h2>";
+<h2 style='margin-left: 1cm;'>karyawan</h2>";
 echo "<table class='table1' border='1'>
   <tr>
 	<th>no</th>
@@ -69,7 +69,7 @@ echo "<table class='table1' border='1'>
  
   </tr>";
 
-$sqla = mysqli_query($kon, "select * from tbl_karyawan order by nama");
+$sqla = mysqli_query($kon, "select * from tbl_karyawan order by nik");
 $no = 1;
 while($ra = mysqli_fetch_array($sqla)){
   echo "<tr>
@@ -88,8 +88,8 @@ while($ra = mysqli_fetch_array($sqla)){
     </td>
    
     <td>
-     <a href='?p=altedit&ida=$rm[nik]'>Ubah</a> |
-     <a href='?p=altdel&ida=$rm[nik]'>Hapus</a>
+     <a href='?p=altedit&nik=$ra[nik]'>Ubah</a> |
+     <a href='?p=altdel&nik=$ra[nik]'>Hapus</a>
 	</td>
     
     

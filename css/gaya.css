@@ -100,6 +100,7 @@
         border-collapse: collapse;
         width: 10px;
         border: 1px solid #f2f5f7;
+        margin-left: 1cm;
     }
      
     .table1 tr th{
@@ -113,7 +114,7 @@
         text-align: center;
     }
     .table1, td{
-        padding: 10px 50px;
+        padding: 10px 30px;
         text-align: left;
     }
     .table1 a{
