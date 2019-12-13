@@ -1,3 +1,16 @@
+    <div class="box2">
+     <div class="box">
+        
+        <h2>Selamat datang di sistem pengabilan keputusan karyawan yang akan menjadi kepala unit sistem informasi metode SAW</h2>
+       
+        <br>
+        <p>
+          nama:cecep januardi <br>
+          nobp:17101152630156
+        </p>
+
+      </div>
+      </div> 
 <?php
 
 echo "<br>";
@@ -25,7 +38,7 @@ echo "</div>";
 echo "
 <br>
 <h2 style='margin-left: 1cm;'>karyawan</h2>";
-echo "<table class='table1' border='1'>
+echo "<table class='table2' border='1' >
   <tr>
 	<th>no</th>
     <th>nik</th>

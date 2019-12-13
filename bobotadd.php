@@ -7,7 +7,6 @@
 
         <label for="">NIK</label>
         <input style="margin-left: 73px" type="text" name="nik" id="nik" >
-        <input style="width: 5%;" type="submit" name="cari" id="cari" value="isi" />
         <div id="live"></div><br>					
 				<div id="isi"></div>				
         <label for="">pengetahuan</label>

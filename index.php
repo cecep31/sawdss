@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/gaya.css">
+    <title>SAW</title>
+    <link rel="stylesheet" href="css/gayaku.css">
 </head>
 <body>
 <nav>
@@ -15,7 +15,7 @@
             <ul>
                 <li><a href="?p=altadd">tambah karyawan</a></li>
                 <li><a href="?p=bobotadd">masukan bobot</a></li>
-                <li><a href="?p=kriteria">kriteria</a></li>
+                
             </ul>
         </li>
         <li><a href="#">penilaian</a>
@@ -26,13 +26,13 @@
         </li>
         <li><a href="#">lihat data</a>
             <ul>
-                <li><a href="#">karyawan ternilai</a></li>
-                <li><a href="#">normalisasi</a></li>
+                <li><a href="?p=karyawan">karyawan ternilai</a></li>
+                <li><a href="?p=kriteria">kriteria</a></li>
                 <li><a href="#">perengkingan</a></li>
                 
             </ul>
         </li>
-        <li><a href="#" onClick="return confirm ('pastikan data di form peremhkingan sudah benar')">laporan</a></li>
+        <li><a href="/sawdss/laporan.php" onClick="return confirm ('pastikan data di form perankingan sudah benar')">laporan</a></li>
     </ul>
 </nav>
 <?php
@@ -48,11 +48,14 @@ if(isset($_GET['p'])){
         case 'altedit':
             include "altedit.php";
             break;
+        case 'karyawan':
+            include "karyawan.php";
+            break;
         case 'bobotadd':
             include "bobotadd.php";
             break;    
-        case 'alternatifdel':
-            include "alternatifdel.php";
+        case 'altdel':
+            include "altdel.php";
             break;
         case 'normal':
             include "normalisasi.php";

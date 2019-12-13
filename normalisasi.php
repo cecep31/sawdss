@@ -104,13 +104,18 @@ echo "<table class='table1' border='1'>
     <th>intalasi jaringan</th>
     <th>kepribadian</th>
     <th>agama</th>
+    <th>tgl penilaian</th>
     
 	
 	
  
   </tr>";
+if ($tanggal==!empty && $tanggal1 == !empty) {
+    
+}
 
-$panggil = mysqli_query($kon, "SELECT tbl_karyawan.nama, tbl_normal.c1, tbl_normal.c2, tbl_normal.c3, tbl_normal.c4 FROM tbl_normal, tbl_karyawan WHERE tbl_karyawan.nik=tbl_normal.nik");
+$panggil = mysqli_query($kon, "SELECT tbl_karyawan.nama, tbl_normal.c1, tbl_normal.c2, tbl_normal.c3, tbl_normal.c4, tbl_normal.tgl FROM tbl_normal, tbl_karyawan WHERE tbl_karyawan.nik=tbl_normal.nik ");
+$panggil = mysqli_query($kon, "SELECT tbl_karyawan.nama, tbl_normal.c1, tbl_normal.c2, tbl_normal.c3, tbl_normal.c4, tbl_normal.tgl FROM tbl_normal, tbl_karyawan WHERE tbl_karyawan.nik=tbl_normal.nik ");
 
 
 $no = 1;
@@ -131,6 +136,9 @@ while($rs = mysqli_fetch_array($panggil)){
     </td>
     <td>
 	  <b>$rs[c4]</b>
+    </td>
+    <td>
+	  <b>$rs[tgl]</b>
     </td>
  
   </tr>";

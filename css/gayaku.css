@@ -102,6 +102,14 @@
         border: 1px solid #f2f5f7;
         margin-left: 1cm;
     }
+    .table2 {
+        font-family: sans-serif;
+        color: rgb(243, 0, 0);
+        border-collapse: collapse;
+        width: 95%;
+        border: 1px solid #f2f5f7;
+        margin-left: 1cm;
+    }
      
     .table1 tr th{
         background: #429837;
@@ -129,6 +137,45 @@
     .table1 tr:nth-child(even) {
         background-color: #bcd4b8;
     }
+
+    
+    
+
+
+
+    .table2 tr th{
+        background: #429837;
+        color: rgb(204, 214, 70);
+        font-weight: normal;
+    }
+     
+    .table2, th {
+        padding: 8px 30px;
+        text-align: center;
+    }
+    .table2, td{
+        padding: 10px 30px;
+        text-align: left;
+    }
+    .table2 a{
+        color: rgb(44, 134, 8);
+        text-decoration: none;
+    }
+     
+    .table2 tr:hover {
+        background-color: #bad6b6;
+    }
+     
+    .table2 tr:nth-child(even) {
+        background-color: #bcd4b8;
+    }
+
+
+
+
+
+
+
     .total{
         padding-left: 10px;
         padding-right:unset ;
@@ -172,4 +219,31 @@
    #live{
        margin-left: 25px;
    }
-  
+.box{
+    
+	background:#bad6b6;
+	height: 200px;
+	width: 720;
+    padding: 20px;
+    color: rgb(255, 49, 49);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: rgb(204, 214, 70);
+    border-radius: 2%;
+    
+}
+.box2{
+    
+	background:#87af82;
+	height: 207px;
+	width: 721;
+    padding: 20px;
+    color: rgb(255, 49, 49);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: rgb(204, 214, 70);
+    border-radius: 2%;
+    
+}
