@@ -11,16 +11,25 @@
 <nav>
     <ul>
         <li><a href="/sawdss">Home</a></li>
-        <li><a href="#">Input</a>
+        <li><a href="#">input</a>
             <ul>
-                <li><a href="?p=altadd">karyawan</a></li>
-                <li><a href="?p=bobotadd">bobot</a></li>
+                <li><a href="?p=altadd">tambah karyawan</a></li>
+                <li><a href="?p=bobotadd">masukan bobot</a></li>
+                <li><a href="?p=kriteria">kriteria</a></li>
             </ul>
         </li>
         <li><a href="#">penilaian</a>
             <ul>
+                <li><a href="?p=normal">normalisasi</a></li>
+                <li><a href="?p=ranking">perengkingan</a></li>
+            </ul>
+        </li>
+        <li><a href="#">lihat data</a>
+            <ul>
+                <li><a href="#">karyawan ternilai</a></li>
                 <li><a href="#">normalisasi</a></li>
                 <li><a href="#">perengkingan</a></li>
+                
             </ul>
         </li>
         <li><a href="#" onClick="return confirm ('pastikan data di form peremhkingan sudah benar')">laporan</a></li>
@@ -44,9 +53,15 @@ if(isset($_GET['p'])){
             break;    
         case 'alternatifdel':
             include "alternatifdel.php";
+            break;
+        case 'normal':
+            include "normalisasi.php";
             break;	
         case 'ranking':
             include "ranking.php";
+            break;
+        case 'kriteria':
+            include "kriteria.php";
             break;	    	
         default:
             echo "<br><center><h3>Maaf. Halaman tidak di temukan !</h3></center>";
