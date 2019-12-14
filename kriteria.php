@@ -3,7 +3,7 @@
 echo "
 <br>
 <h2 style='margin-left: 1cm;'>KRITERIA</h2>";
-echo "<table class='table1' border='1'>
+echo "<table class='table2' border='1'>
   <tr>
 	<th>no</th>
     <th>nama</th>

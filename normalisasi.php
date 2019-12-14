@@ -2,21 +2,23 @@
 echo "
 <br>
 <h2 style='margin-left: 1cm;'>data bobot karyawan</h2> <br>";
-echo "<table class='table1' border='1'>
+echo "<table class='table2' border='1'>
   <tr>
-	<th>no</th>
+  <th>no</th>
+    
     <th>nama</th>
     <th>pengetahuan</th>
     <th>intalasi jaringan</th>
     <th>kepribadian</th>
     <th>agama</th>
+    <th>action</th>
     
 	
 	
  
   </tr>";
 
-$panggil = mysqli_query($kon, "SELECT tbl_karyawan.nama, tbl_bobot.c1, tbl_bobot.c2, tbl_bobot.c3, tbl_bobot.c4 FROM tbl_bobot, tbl_karyawan WHERE tbl_karyawan.nik=tbl_bobot.nik");
+$panggil = mysqli_query($kon, "SELECT  tbl_karyawan.nik, tbl_karyawan.nama, tbl_bobot.c1, tbl_bobot.c2, tbl_bobot.c3, tbl_bobot.c4 FROM tbl_bobot, tbl_karyawan WHERE tbl_karyawan.nik=tbl_bobot.nik");
 
 
 $no = 1;
@@ -38,6 +40,10 @@ while($rs = mysqli_fetch_array($panggil)){
     <td>
 	  <b>$rs[c4]</b>
     </td>
+    <td>
+     <a href='?p=bobotedit&nik=$rs[nik]'>Ubah</a> |
+     <a href='?p=bobotdel&nik=$rs[nik]'>Hapus</a>
+	</td>
  
   </tr>";
   $no++;
@@ -96,7 +102,7 @@ while($rm = mysqli_fetch_array($sqlm)){
 echo "
 <br>
 <h2 style='margin-left: 1cm;'>data normalisasi</h2> <br>";
-echo "<table class='table1' border='1'>
+echo "<table class='table2' border='1'>
   <tr>
 	<th>no</th>
     <th>nama</th>
@@ -110,11 +116,9 @@ echo "<table class='table1' border='1'>
 	
  
   </tr>";
-if ($tanggal==!empty && $tanggal1 == !empty) {
-    
-}
 
-$panggil = mysqli_query($kon, "SELECT tbl_karyawan.nama, tbl_normal.c1, tbl_normal.c2, tbl_normal.c3, tbl_normal.c4, tbl_normal.tgl FROM tbl_normal, tbl_karyawan WHERE tbl_karyawan.nik=tbl_normal.nik ");
+
+
 $panggil = mysqli_query($kon, "SELECT tbl_karyawan.nama, tbl_normal.c1, tbl_normal.c2, tbl_normal.c3, tbl_normal.c4, tbl_normal.tgl FROM tbl_normal, tbl_karyawan WHERE tbl_karyawan.nik=tbl_normal.nik ");
 
 

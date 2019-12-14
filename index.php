@@ -18,7 +18,7 @@
                 
             </ul>
         </li>
-        <li><a href="#">penilaian</a>
+        <li><a href="#">proses</a>
             <ul>
                 <li><a href="?p=normal">normalisasi</a></li>
                 <li><a href="?p=ranking">perengkingan</a></li>
@@ -28,7 +28,7 @@
             <ul>
                 <li><a href="?p=karyawan">karyawan ternilai</a></li>
                 <li><a href="?p=kriteria">kriteria</a></li>
-                <li><a href="#">perengkingan</a></li>
+                <li><a href="?p=lihatrank">perengkingan</a></li>
                 
             </ul>
         </li>
@@ -53,6 +53,12 @@ if(isset($_GET['p'])){
             break;
         case 'bobotadd':
             include "bobotadd.php";
+            break;   
+        case 'bobotedit':
+            include "bobotedit.php";
+            break;
+        case 'bobotdel':
+            include "bobotdel.php";
             break;    
         case 'altdel':
             include "altdel.php";
@@ -62,6 +68,9 @@ if(isset($_GET['p'])){
             break;	
         case 'ranking':
             include "ranking.php";
+            break;
+        case 'lihatrank':
+            include "lihatrank.php";
             break;
         case 'kriteria':
             include "kriteria.php";

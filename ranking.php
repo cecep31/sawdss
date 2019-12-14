@@ -6,7 +6,7 @@ $sqlrank = mysqli_query($kon, "delete from tbl_rank");
 
 echo "<br>
 
-    <table class='table1' border='1'>
+    <table class='table2' border='1'>
   <tr>
 	  <th>rank</th>
     <th>nik</th>
