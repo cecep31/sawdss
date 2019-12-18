@@ -11,7 +11,7 @@ echo "<br>
 	  <th>rank</th>
     <th>nik</th>
     <th>nama</th>
-    <th>nilai</th>
+    <th>total nilai</th>
     <th>tgl</th>
 
  

@@ -14,7 +14,7 @@
         <li><a href="#">input</a>
             <ul>
                 <li><a href="?p=altadd">tambah karyawan</a></li>
-                <li><a href="?p=bobotadd">masukan bobot</a></li>
+                <li><a href="?p=bobotadd">masukan nilai</a></li>
                 
             </ul>
         </li>

@@ -8,7 +8,11 @@
         <label for="">NIK</label>
         <input style="margin-left: 73px" type="text" name="nik" id="nik" >
         <div id="live"></div><br>					
-				<div id="isi"></div>				
+				<div id="isi"></div>	
+
+        <label for="">tgl penilaian</label>
+        <input style="margin-left: 106px" type="text" name="tgln" id="tgln" placeholder="yyyy/mm/dd"> <br> 
+
         <label for="">pengetahuan</label>
         <input style="margin-left: 98px" type="text" name="c1" id="c1" > <br> 
         <label for="">instalasi jaringan</label>

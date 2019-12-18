@@ -13,8 +13,8 @@ echo "<br>
 	  <th>rank</th>
     <th>nik</th>
     <th>nama</th>
-    <th>nilai</th>
-    <th>tgl</th>
+    <th>total nilai</th>
+    
 
  
     
@@ -32,7 +32,7 @@ while($gas = mysqli_fetch_array($sqlrank)){
     <td>$gas[nik]</td>
     <td>$gas[nama]</td>
     <td>$gas[nilai]</td>
-    <td>$gas[tgl]</td>
+    
   </tr>";
 
   $no++;
