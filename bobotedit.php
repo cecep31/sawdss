@@ -9,7 +9,10 @@ $rm = mysqli_fetch_array($sqlm);
 		
 				<label for="">NIK</label>
 				<input style="margin-left: 89px" type="text" name="nik" id="nik" value="<?php echo "$rm[nik]"; ?>" disabled><br>					
-		
+    
+        <label for="">tgl penilaian</label>
+				<input style="margin-left: 30px" type="date" name="tgl" id="tgl" value="<?php echo "$rm[tgl]"; ?>">	<br>
+
 				<label for="">pengetahuan</label>
 				<input style="margin-left: 20px" type="text" name="nama" id="nama" value="<?php echo "$rm[c1]"; ?>">	<br>				
                   
@@ -30,7 +33,7 @@ $rm = mysqli_fetch_array($sqlm);
 <?php
 
 if( isset($_POST["simpan"])){
-  $sqlalt = mysqli_query($kon, "update tbl_bobot set nik='$_POST[nik]', c1='$_POST[c1]', c2='$_POST[c2]', c3='$_POST[c3]', c4='$_POST[c4]' where nik='$_GET[nik]'"); 
+  $sqlalt = mysqli_query($kon, "update tbl_bobot set nik='$_POST[nik]', c1='$_POST[c1]', c2='$_POST[c2]', c3='$_POST[c3]', c4='$_POST[c4]', tgl='$_POST[tgl]' where nik='$_GET[nik]'"); 
   if($sqlalt){
     echo "Data Berhasil Diubah";
   }else{

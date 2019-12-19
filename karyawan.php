@@ -1,7 +1,7 @@
 <?php
 echo "
 <br>
-<h2 style='margin-left: 1cm;'>data bobot karyawan</h2> <br>";
+<h2 style='margin-left: 1cm;'>Data Nilai Karyawan</h2> <br>";
 echo "<table class='table2' border='1'>
   <tr>
   <th>no</th>

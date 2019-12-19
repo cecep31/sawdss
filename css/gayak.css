@@ -194,7 +194,7 @@
         cursor: pointer;
     }
 
-    input[type=text], select {
+    input[type=text],input[type=date], select {
         width: 15%;
         padding: 12px 9px;
         margin: 8px 0;

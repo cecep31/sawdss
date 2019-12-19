@@ -11,7 +11,7 @@
 				<div id="isi"></div>	
 
         <label for="">tgl penilaian</label>
-        <input style="margin-left: 106px" type="text" name="tgln" id="tgln" placeholder="yyyy/mm/dd"> <br> 
+        <input style="margin-left: 106px" type="date" name="tgln" id="tgln" placeholder="yyyy-mm-dd"> <br> 
 
         <label for="">pengetahuan</label>
         <input style="margin-left: 98px" type="text" name="c1" id="c1" > <br> 
@@ -27,9 +27,9 @@
     </form>
 <?php
 
-$tgln=date('Y-m-d');
+
 if( isset($_POST["simpan"])){
-  $sqlalt = mysqli_query($kon, "INSERT INTO tbl_bobot (nik,c1,c2,c3,c4,tgl) VALUES ('$_POST[nik]','$_POST[c1]','$_POST[c2]','$_POST[c3]','$_POST[c4]','$tgln')"); 
+  $sqlalt = mysqli_query($kon, "INSERT INTO tbl_bobot (nik,c1,c2,c3,c4,tgl) VALUES ('$_POST[nik]','$_POST[c1]','$_POST[c2]','$_POST[c3]','$_POST[c4]','$_POST[tgln]')"); 
   if($sqlalt){
     echo "Data Berhasil Disimpan";
   }else{
